@@ -1,0 +1,41 @@
+﻿进入js目录，找到ux.js文件，打开后寻找变量  credentials  
+
+1.ctrl+F  > 粘贴 credentials > 搜索 
+
+2.修改其赋值  例如  原版  credentials = true      修改后 credentials = false
+
+
+
+
+属性 credentials = true  的时候为后端转换发票 
+
+
+属性 credentials = false 的时候为前端转换发票 
+
+
+注意标点符号不能误删
+
+
+修改完成后刷新手机页面
+
+
+
+
+
+
+自动登陆跳转说明
+
+进入js目录，找到ux.js文件，打开后寻找 注释  自动登录跳转链接  
+
+1.ctrl+F  > 粘贴 自动登录跳转链接 > 搜索 
+
+
+
+将链接中的  https的回跳地址就改为项目所在地址
+
+例：修改前
+location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4943f6480a79a436&redirect_uri=https://yun.dascomyun.cn/test/z-new-ide-h/html/index.html&response_type=code&scope=snsapi_base&state=123#wechat_redirect";
+
+
+修改后
+location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4943f6480a79a436&redirect_uri=https://yun.dascomyun.cn/test/dsyuntest/html/index.html&response_type=code&scope=snsapi_base&state=123#wechat_redirect";

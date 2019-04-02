@@ -1,0 +1,500 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="description" content="电子发票云打印">
+    <title class="title"></title> 
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+    <script src="../js/vendor/pdf.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/vendor/flexible.js"></script>
+    <script data-main="../js/main.js" src="../js/vendor/require.js" defer async></script>
+    <script type="text/javascript" src="../js/base64.js"></script>
+    
+</head>  
+<body>  
+	<header class="header">
+		<img src="../img/index.jpg"/>
+	</header>
+	<section class="loading">
+		<div class="lodin_box">
+			<p class="loading_txt">稍等片刻</p>
+			<img class="loading_img" src="../img/dascom.png"/>
+		</div>
+	</section>
+	<section class="com">
+
+		    <!--内容开始--每个div就是一个页面 -->
+		    <!-- 主页-->
+            <div class="com_section index">
+            	<a href="#center"><img class="login_head img_wx" src="../img/center/center-head.jpg"/></a>
+				<div class="logo">
+					<img src="../img/public/ds_logo.png"/>
+				</div>
+           		<!--背景轮播图-->
+                <div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="" src-data="../img/banner/banner-1.png"/>
+						</div>
+						<div class="swiper-slide">
+							<img src=""  src-data="../img/banner/banner-3.png"/>
+						</div>
+						<div class="swiper-slide">
+							<img src=""  src-data="../img/banner/banner-2.png"/>
+						</div>
+					</div>
+                    <!--分页器-->
+                    <div class="swiper-pagination"></div>
+                </div>
+           		<!--背景轮播图 结束-->
+			<div class="main">
+				<!-- number号条-->
+				<div class="ber_top">
+					<ul>
+						<li class="munber_sty">
+							<div class="munber"></div>
+							<i class="munber_icon"><img class="ber_top_img munber_img" src="../img/public/print_icom.png"/></i>
+						</li>
+						<li class="status_sty">
+							<div class="munber_status"></div>
+							<i class="status_icon"><img class="ber_top_img status_img" src="../img/public/printx.png"/></i>
+						</li>
+					</ul>
+				</div>
+				<!--几个按钮 -->
+				<div class="all_btn">
+					<div class="btn_top">
+						<div class="locaUp">
+							<p class="btn_txt">本地文件</p>
+							<input type="file" class="loca_space" name="" id="" value="" />
+						</div>
+						<div class="msm input_msm_function push_btn_msm">
+							<p class="btn_txt">短信打印</p>
+						</div>
+						<div class="wechat input_wx_function">
+							<p class="btn_txt">微信卡包</p>
+						</div>
+					</div>
+					<div class="box_bot">
+						<div class="spacef">
+							<section class="spacef_len"></section>
+							<a class="space_img space_img_btn" href="#space"></a>
+						</div>
+						<div class="Email">
+							<img class="Email_img" src="../img/public/mail.png"/>
+						</div>
+						<section class="boxEmailBlur">
+							
+						</section>
+					</div>
+				</div>
+				
+				
+			</div>
+
+        	</div>
+            <!-- 主页结束-->
+            
+            
+            <!-- 票夹开始-->
+            
+            <div class="com_section space">
+
+            	
+            	
+            	
+            	
+            	<a class="space_tit" href="#login">
+            		
+            	</a>
+
+
+            		<ul class="space_list" >
+            			<!--<li>
+            				<img class="space_delete" src="../img/public/delete-space.png"/>
+            				<dl class="space_info">
+	            				<dt><div class="space_name">发票名字</div></dt>
+	            				<dd class=""><span class="space_timer">时间：2017年07月06日</span> <span class="space_money">金额：123</span></dd>
+	            				<dd class=""><strong>收款方：</strong>青岛京东昌益得贸易有限公司</dd>
+	            				<dd class=""></dd>
+
+            				</dl>
+        					<div class="space_img_info">详情</div>
+            				<div class="space_choose">选择打印</div>
+            			</li>-->
+
+            		</ul>
+            </div>
+            
+            
+            <!-- 个人中心开始-->
+            <div class="com_section center">
+            	<div class="pup_center">
+            		<a class="user_mane"></a>
+            		<p class="login_out">退出登陆</p>
+            	</div>
+            	<!--透明的背景图片-->
+            	<div class="head_bg">
+            		<img class="login_head_center img_wx" src="../img/center/center-head.jpg"/>
+            		<img class="bg_img" src=""/>
+            	</div>
+            	<!--修改密码开始-->
+            	<div class="alter_pwd">
+            		<div class="pwdReturn"></div>
+            		<p class="alter_tip"></p>
+            		<div class="alter_con">
+            			<ul class="reg_inp alter">
+            				<li><span class="pwd ">请输入旧密码</span><input class="inp_len1 alter_pwd_inp" type="password" name="" id="alter_lod" value="" /></li>
+            				<li><span class="pwd ">请输入新密码</span><input class="inp_len1 alter_pwd_inp" type="password" name="" id="alter_new1" value="" /></li>
+            				<li><span class="pwd ">确认新密码</span><input class="inp_len1 alter_pwd_inp" type="password" name="" id="alter_new2" value="" /></li>
+            				<li><div class="btn btn_alter">修改密码</div></li>
+            			</ul>
+            		</div>
+            	</div>
+            	<!--个人中心导航-->
+        	    <div class="center_nav">
+	        	    <!--<div class="center_left help">
+	        			帮助
+	        		</div>-->
+	        		<div class="center_left print_log_btn">
+	        			<a href="#printLog">打印记录</a>
+	        		</div>
+	        		<div class="center_left keep_btn">
+	        			<a href="#keep">联系我们</a>
+	        		</div>
+	        		<div class="center_left pwdalter">
+	        			<a>修改密码</a>
+	        		</div>
+	        		<div class="center_left register_btn">
+	        			<a href="#register">注册账号</a>
+	        		</div>
+	        		<div class="center_left login_btn">
+	        			<a href="#login">登陆</a>
+	        		</div>
+	        		<div class="center_left notice_btn">
+			    		<a href="#notice">消息</a>
+			    		<i class="notice_len"></i>
+			    	</div>
+        	    </div>
+            </div>
+            <!-- 主个人中心结束-->
+            
+            
+            <!-- 打印页面开始-->
+            <div class="com_section print">
+            	<ul class="print_space_list">
+            		<!--<li class="print_space_list_loca">
+            			<div class="print_space_name">名字</div>
+            			<div class="">
+            				<span class="print_space_money">金额：￥13.5</span><span class="print_space_dateTime">时间：2018年11月24日</span>
+            			</div>
+            			<div class="print_space_buyName">抬头：购买方名字</div>
+            			<div class="sta">状态：</div>
+            			<div class="print_space_delete"></div>
+            		</li>-->
+            		
+            	</ul>
+            </div>
+            <!-- 打印页面结束-->
+            <!-- 注册页面-->
+            <div class="com_section register">
+            	<p class="tip_txt"></p>
+            	<i class="shade"></i>
+            	<div class="read_txt">
+            		<div class="read_tit">
+            			<i class="return_read"></i>
+            			得实云打印免责声明
+            		</div>
+        				<section class="read_txt_info">
+						　　得实云打印为得实集团开发的一套基于打印机控制与管理系统。<br />
+						　　在您使用得实云打印服务前，请您务必仔细阅读并透彻理解本声明。您可以选择不使用得实云打印服务，但如果您使用得实云打印服务，您的使用行为将被视为对本声明全部内容的认可。<br />
+						　　用户须明白，得实云打印服务仅依其当前所呈现的状况提供，得实云打印服务涉及到互联网及移动通讯等服务，可能会受到各个环节不稳定因素的影响。因此服务可能存在因黑客攻击，服务器病毒的侵入，非法内容信息、骚扰信息的屏蔽，政府管制以及其他任何互联网络、WIFI网络、通信线路、信息安全管理措施等原因造成的服务中断、受阻等不可抗力，用户所在网络环境、用户关闭打印机等其他原因造成的服务中断或不能满足用户要求的风险。使用得实云打印服务的用户须承担以上风险，得实云打印对服务之及时性、安全性、准确性不作担保，对因此导致用户不能发送和完整打印、信息传输错误，个人设置失败、或其他问题不承担任何责任。<br />
+						　　如得实云打印的系统发生故障影响到所提供服务的正常运行，得实云打印承诺在第一时间内与相关单位配合，及时处理进行修复。但用户因此而产生的经济损失，本公司不承担责任。此外，得实云打印保留不经事先通知进行维修保养、升级或其他目的暂停本服务任何部分的权利。 您应该对使用得实云打印的后果自行承担风险。得实云打印不做任何形式的保证（包括但不限于）：不保证您打印数据不丢失，不保证打印作业正常使用或不被改变，不保证用户提交打印数据的安全性、正确性、合法性。因前述不可抗力或非法打印数据等任何原因而导致您不能正常使用得实云打印服务，得实云打印不承担任何法律责任。<br />
+						　　得实云打印尊重并保护所有使用得实云打印服务用户的个人隐私，您注册的用户名、电子邮件地址等个人资料；非经您亲自许可或根据相关法律、法规的强制性规定，得实云打印不会主动向第三方披露。<br />
+						
+						</section>
+            	</div>
+            	<div class="register_con">
+						<div class="uanvb">
+		            		<p class="paofo">您已登录</p>
+		            		<p class="login_out login_out_ajtop">退出登陆</p>
+						</div>            			
+						<ul class="reg_inp reg_inpt">
+            				<li><span class="acc">账号</span><input class="inp_len1" type="text" name="" id="inp1" value="" /></li>
+            				<li><span class="pwd">密码</span><input class="inp_len1" type="password" name="" id="inp2" value="" /></li>
+            				<li><span class="pwd">确认密码</span><input class="inp_len1" type="password" name="" id="inp3" value="" /></li>
+<!--            				<li><span class="vscode_load">验证码</span><img class="vscode" src=""/><input class="inp_len2" type="text" name="" id="inp4" value="" /></li>
+-->            				<li><div class="read_con"> <input class="checkbox" type="checkbox" name="" id="" value="" /> 同意并愿意遵守 <small class="ramake">得实用户协议</small></div></li>
+            				<li><div class="btn btn_reg">注册</div></li>
+            				<li class="href_login"><a href="#login">已有账号？点我登陆</a></li>
+            			</ul>
+            	</div>
+            </div>
+            <!-- 注册页面结束-->
+            <!-- 联系页面开始-->
+            <div class="com_section keep">
+            			<ul class="keep_me">
+							<li class="keep_tit">
+								<p>广州得实电子科技有限公司</p>
+							</li>
+							<li>
+								<p>地址：广州市黄埔区南翔三路46号得实大厦401室</p>
+							</li>
+							<li>
+								<!--<p>电话：020-62716395</p>-->
+							</li>
+							<li>
+								<p>官网：<a href="http://www.dascomyun.cn">www.dascomyun.cn</a></p>
+							</li>
+							<li>
+								<p>邮箱：yangxj@dascom.cn</p>
+							</li>
+							<li>
+								<p>版本号：V3.0.0.3</p>
+							</li>
+						</ul>
+            </div>
+            <!-- 联系页面结束-->
+            <!-- 登陆页面-->
+            <div class="com_section login">
+            	<div class="register_con">
+						<div class="uanvb">
+		            		<p class="paofo">您已登录</p>
+		            		<p class="login_out login_out_ajtop">退出登陆</p>
+						</div>
+            			<ul class="aj_top reg_inp reg_inpt">
+            				<li><span>账号</span><input class="inp_len1" type="text" name="" id="log1" value="" /></li>
+            				<li><span>密码</span><input class="inp_len1" type="password" name="" id="log2" value="" /></li>
+            				<li><div class="btn btn_log">登陆</div></li>
+            				<li class="href_login"><a href="#register">没有账号？前往注册</a></li>
+            			</ul>
+            	</div>
+            </div>
+             <!-- 登陆页面结束-->
+             
+             
+             
+             <!-- 打印记录页面-->
+            <div class="com_section print_log">
+            	<ul class="print_log_con">
+
+  
+            	</ul>
+
+            </div>
+             <!-- 打印记录页面结束-->
+             
+             
+             
+             
+              <!-- 消息页面-->
+            <div class="com_section notice">
+            	<ul class="notice_list">
+            		
+            	</ul>
+            </div>
+             <!-- 消息页面结束-->
+
+           
+    </section>   
+    <!--从这里开始是控件 -->
+                	  <!-- 上传控件-->
+    
+    
+    	 <section class="upload_btn">
+	    	
+			<div class="url_upload input_msm_function">
+			</div>
+			
+			<div class="loca_upload">
+				<from acion="./">
+						<section class="aj_file">
+							
+							<input class="upload_Input" id="uploaderInput"  type="file" >
+						</section>
+				</from>	
+			</div>
+		</section>
+	    <section class="space_btn">
+			<div class="space_upload"></div>
+			<div class="space_del"></div>
+			<div class="space_choose_go"></div>
+		</section>
+ 
+   
+    <!-- 上传控件结束-->	
+            	
+    
+    <!--打印界面的上传控件-->
+    <div class="aj_input">
+    	<ul class="print_footer">
+    		<li class="print_len">
+    			<i class="level0"></i>
+    		</li>
+    		<li class="print_btn" id="print_btn"><img src="../img/public/print.png"/></li>
+    		<li class="push_btn">
+    			<i class="input_blur"> <img class="input_blur_img" src="../img/public/push.png"/></i>
+    			<div class="input_loca">
+		    		<input type="file" class="loca_space" name="" id="" value="" />
+		    		本地发票
+		    	</div>
+		    	<div class="input_wx input_wx_function">
+		    		微信发票
+		    	</div>
+		    	<div class="input_msm input_msm_function push_btn_msm">
+		    		短信打印
+		    	</div>
+		    	<div class="input_ticket">
+		    		<a class="space_img_btn" href="#space">云票夹</a>
+		    	</div>
+    		</li>
+    	</ul>
+    	<div class="print_blur">
+    		<div class="print_blur_txt">
+    			发票正在打印中，请稍等
+    		</div>
+    		<div class="btn aj_print_btn">
+    			继续打印 
+    		</div>
+    	</div>
+    </div>
+    
+    
+    <!--遮罩层控件-->
+    	<section class="maskLayer"></section>
+    <!--遮罩层结束-->
+    
+    
+  
+	
+	<!--预览控件-->
+	    <div class="aj_img">
+            <img class="bva_img" src=""/>
+        </div>
+        
+
+        
+    <!-- 抽屉弹窗控件-->
+<!--抽屉控件已经做成动态加载的了，在ux里面找  lockers  -->
+    <section class="alert_warp">
+		<ul class="alert_main">
+			<li class="alert_title">提示</li>
+			<li class="alert_con"></li>
+			<li class="alert_choose">
+				<div class="alert_false">取消</div>
+				<div class="alert_true">确认</div>
+			</li>
+		</ul>
+	</section>
+    <!-- 抽屉弹窗控件结束-->
+    
+       <!-- 抽屉弹窗控件-->
+
+    
+    
+    
+    <!-- 打印预览控件-->
+    <section class="print_img_preview">
+    	<ul class="print_img_preview_con">
+    		<li class="method">
+    			<ul class="click_data_try">
+    				<li data-try = "140">1</li>
+    				<li data-try = "150">2</li>
+    				<li data-try = "160">3</li>
+    				<li class="try_in" data-try = "178">4</li>
+    				<li data-try = "200">5</li>
+    				<li data-try = "210">6</li>
+    				<li data-try = "220">7</li>
+    			</ul>
+    			<div class="img_save"><span class="rotate">保存</span></div>
+    			<div class="img_cancel"><span class="rotate">取消</span></div>
+    		</li>
+    		<li> <img class="preview_img" src=""/></li>
+
+    	</ul>
+    </section>
+    <!-- 打印预览控件结束-->
+    
+    <!--短信打印添加控件 -->
+    <section class="msm_print_box">
+    	<ul class="msm_print_con">
+    		<li class="msm_prin_ttitle">
+    			请输入短信链接
+    		</li>
+    		<li class="msm_prin_text">
+    			<textarea class="msm_print_val" name="" rows="" cols=""></textarea>
+    		</li>
+    		<li class="msm_prin_btn">
+    			
+    			<div class="">确定</div>
+    			<span class="blurs"></span>
+    		</li>
+    		<li>
+    			<div class="msm_false"></div>
+    		</li>
+    	</ul>
+    </section>
+    
+    <!-- 隐藏域-->
+    <section style="display: none; opacity: 0;">
+    	<div  id="domian"></div><!--图片转换的时候用来做一个完成的标示 -->
+    	<div  id="printmian">true</div>
+    	<div  id="printover">true</div>
+    	<div  id="entrance"></div>
+    	<div  id="printToImage">true</div>
+    </section>
+    <!--隐藏域结束-->
+    <!--短信打印添加控件结束 -->
+	<!--画布控件 -->
+	<div id="container" style="display: none;">
+	    <div class="lightbox"></div>
+	    <div id="pop" class="pop">
+	        <canvas id="the-canvas"></canvas>
+	    </div>
+	    <!--<img class="Toimage_blur" src=""/>-->
+	</div>
+	
+	<!--画布控件结束 -->
+    
+    
+	<!--控件结束 -->
+	
+	<!--底部导航栏-->
+    <footer class="footer">
+    	<div class="footer_div">
+    		<img class="ticket_icon" src="../img/public/ticket.png"/>
+    		<img class="ticket_icon_in" src="../img/public/ticket_in.png"/>
+    		<a class="entrance_tic space_txt" href="#space">票夹</a>
+    	</div>
+    	<div class="footer_div">
+    		<img class="index_icon" src="../img/public/index.png"/>
+    		<img class="index_icon_in" src="../img/public/index_in.png"/>
+    		<a class="index_txt" href="#index">主页</a>
+    	</div>
+
+    	<!--<div class="footer_div">
+    		<a href="#upload">上传发票</a>
+    	</div>-->
+
+    	<div class="footer_div">
+    		<img class="center_icon" src="../img/public/center.png"/>
+    		<img class="center_icon_in" src="../img/public/center_in.png"/>
+    		<i class="notice_len aj_notcie"></i>
+    		<a class="center_txt" href="#center">我的</a>
+    	</div>
+    	
+    </footer>
+            
+            
+            
+            
+            
+            
+
+</body>  
+</html> 
